@@ -1,0 +1,1 @@
+export const DBpath = 'mongodb://localhost/Blog';
