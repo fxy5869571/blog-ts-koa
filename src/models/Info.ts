@@ -7,14 +7,14 @@ const InfoSchema = new Schema({
   authorImg: String,
   // 文章类型
   classList: Array,
-  // 标签数组
-  tag: Array,
-
+  // github
   github: String,
   // 作者名字
   name: String,
   // 介绍自己
   present: String,
+  // 标签数组
+  tag: Array,
 })
 const Info = DB.model('Info', InfoSchema)
 

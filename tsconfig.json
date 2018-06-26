@@ -7,10 +7,10 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "sourceRoot": "src",
-    "outDir": "bld"
+    "outDir": "dist"
   },
   "exclude": [
-    "bld",
+    "dist",
     "node_modules"
   ]
 }
