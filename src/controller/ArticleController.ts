@@ -29,4 +29,7 @@ export default class ArticleController {
     const Article = await findArticleById(ctx.query.Id)
     ctx.body = Article
   }
+  public static async addArticle(ctx: Context) {
+    console.log(ctx)
+  }
 }
