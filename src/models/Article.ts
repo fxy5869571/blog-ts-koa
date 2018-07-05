@@ -8,9 +8,11 @@ const ArticleSchema = new Schema({
   // 内容
   content: String,
   // 创建时间
-  create_at: { type: Date, default: Date.now() },
+  create_at: Date,
+  // 原创或转载
+  nature: String,
   // 文章标签
-  tag: String,
+  tag: Object,
   // 标题
   title: String,
   // 文章类型

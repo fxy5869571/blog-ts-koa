@@ -1,7 +1,11 @@
 import { Context } from 'koa'
 import DBHelper from '../DBHelper'
-const { findArticleById, findArticles } = DBHelper.ArticleHelper
-
+const {
+  findArticleById,
+  findArticles,
+  createArticle,
+  deleteArticleById,
+} = DBHelper.ArticleHelper
 export default class ArticleController {
   public static async articles(ctx: Context) {
     const { pageIndex, pageSize, timeFile } = ctx.query
@@ -30,6 +34,19 @@ export default class ArticleController {
     ctx.body = Article
   }
   public static async addArticle(ctx: Context) {
-    console.log(ctx)
+    const response = createArticle(ctx.request.body)
+    if (response) {
+      ctx.body = { message: '发表文章成功' }
+    } else {
+      ctx.body = { message: '发表文章失败' }
+    }
+  }
+  public static async deleteArticle(ctx: Context) {
+    const response = await deleteArticleById(ctx.request.body.id)
+    if (response.ok === 1) {
+      ctx.body = { message: '文章删除成功' }
+    } else {
+      ctx.body = { message: '操作失败' }
+    }
   }
 }
