@@ -5,6 +5,7 @@ interface IQuery {
   pageSize: string
 }
 interface IArticle {
+  _id?: string
   tag: string
   create_at: string
 }
@@ -61,5 +62,9 @@ export default class ArticleHelper {
   // 删除文章
   public static deleteArticleById = async (id: string) => {
     return await Article.remove({ _id: id })
+  }
+  public static updateArticleById = async (article: IArticle) => {
+    const response = await Article.update({ _id: article._id }, article)
+    return response
   }
 }

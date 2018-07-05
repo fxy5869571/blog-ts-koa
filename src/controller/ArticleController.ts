@@ -5,6 +5,7 @@ const {
   findArticles,
   createArticle,
   deleteArticleById,
+  updateArticleById,
 } = DBHelper.ArticleHelper
 export default class ArticleController {
   public static async articles(ctx: Context) {
@@ -45,6 +46,14 @@ export default class ArticleController {
     const response = await deleteArticleById(ctx.request.body.id)
     if (response.ok === 1) {
       ctx.body = { message: '文章删除成功' }
+    } else {
+      ctx.body = { message: '操作失败' }
+    }
+  }
+  public static async updateArticle(ctx: Context) {
+    const response = await updateArticleById(ctx.request.body.id)
+    if (response.ok === 1) {
+      ctx.body = { message: '文章修改成功' }
     } else {
       ctx.body = { message: '操作失败' }
     }
