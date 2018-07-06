@@ -64,7 +64,15 @@ export default class ArticleHelper {
     return await Article.remove({ _id: id })
   }
   public static updateArticleById = async (article: IArticle) => {
-    const response = await Article.update({ _id: article._id }, article)
+    const tag = {
+      color: tagColors[Math.floor(Math.random() * 6)],
+      title: article.tag,
+    }
+
+    const response = await Article.update(
+      { _id: article._id },
+      { ...article, tag }
+    )
     return response
   }
 }

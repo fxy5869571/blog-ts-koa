@@ -51,7 +51,7 @@ export default class ArticleController {
     }
   }
   public static async updateArticle(ctx: Context) {
-    const response = await updateArticleById(ctx.request.body.id)
+    const response = await updateArticleById(ctx.request.body)
     if (response.ok === 1) {
       ctx.body = { message: '文章修改成功' }
     } else {
