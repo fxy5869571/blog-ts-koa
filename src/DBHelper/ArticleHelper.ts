@@ -1,5 +1,5 @@
-import Models from '../models/'
-const { Article } = Models
+import { Article } from '../models/'
+
 interface IQuery {
   pageIndex: string
   pageSize: string

@@ -9,7 +9,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const models_1 = require("../models/");
-const { Article } = models_1.default;
 const tagColors = [
     '#87d068',
     '#108ee9',
@@ -25,11 +24,11 @@ ArticleHelper.findArticles = (query) => __awaiter(this, void 0, void 0, function
     const { pageSize, pageIndex } = query;
     const Skip = Number.parseInt(pageIndex) * Number.parseInt(pageSize) -
         Number.parseInt(pageSize);
-    const articles = yield Article.find()
+    const articles = yield models_1.Article.find()
         .sort({ create_at: -1 })
         .limit(Number.parseInt(pageSize))
         .skip(Skip);
-    const total = yield Article.count({}, (err, count) => {
+    const total = yield models_1.Article.count({}, (err, count) => {
         if (err) {
             return false;
         }
@@ -40,7 +39,7 @@ ArticleHelper.findArticles = (query) => __awaiter(this, void 0, void 0, function
     return { total, articles };
 });
 // 查询文章详情
-ArticleHelper.findArticleById = (id) => __awaiter(this, void 0, void 0, function* () { return yield Article.findById(id); });
+ArticleHelper.findArticleById = (id) => __awaiter(this, void 0, void 0, function* () { return yield models_1.Article.findById(id); });
 // 添加文章
 ArticleHelper.createArticle = (article) => __awaiter(this, void 0, void 0, function* () {
     // 随机标签颜色
@@ -48,7 +47,7 @@ ArticleHelper.createArticle = (article) => __awaiter(this, void 0, void 0, funct
         color: tagColors[Math.floor(Math.random() * 6)],
         title: article.tag,
     };
-    const response = yield Article.create(Object.assign({}, article, { tag, create_at: new Date() }), (error, doc) => {
+    const response = yield models_1.Article.create(Object.assign({}, article, { tag, create_at: new Date() }), (error, doc) => {
         if (error) {
             throw error;
         }
@@ -60,14 +59,14 @@ ArticleHelper.createArticle = (article) => __awaiter(this, void 0, void 0, funct
 });
 // 删除文章
 ArticleHelper.deleteArticleById = (id) => __awaiter(this, void 0, void 0, function* () {
-    return yield Article.remove({ _id: id });
+    return yield models_1.Article.remove({ _id: id });
 });
 ArticleHelper.updateArticleById = (article) => __awaiter(this, void 0, void 0, function* () {
     const tag = {
         color: tagColors[Math.floor(Math.random() * 6)],
         title: article.tag,
     };
-    const response = yield Article.update({ _id: article._id }, Object.assign({}, article, { tag }));
+    const response = yield models_1.Article.update({ _id: article._id }, Object.assign({}, article, { tag }));
     return response;
 });
 exports.default = ArticleHelper;

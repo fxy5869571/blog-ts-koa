@@ -1,5 +1,4 @@
-import Models from '../models/'
-const { Info, Resume } = Models
+import { Info, Resume } from '../models/'
 export default class InfoHelper {
   public static findInfo = async () => await Info.find({})
   public static findResume = async () => {

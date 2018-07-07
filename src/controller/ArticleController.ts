@@ -22,10 +22,7 @@ export default class ArticleController {
       }
     } else {
       ctx.body = {
-        articles: articles.map((item: any) => ({
-          ...item._doc,
-          content: item._doc.content.substr(0, 180),
-        })),
+        articles,
         total,
       }
     }
@@ -39,7 +36,7 @@ export default class ArticleController {
     if (response) {
       ctx.body = { message: '发表文章成功' }
     } else {
-      ctx.body = { message: '发表文章失败' }
+      ctx.body = { message: '操作失败' }
     }
   }
   public static async deleteArticle(ctx: Context) {

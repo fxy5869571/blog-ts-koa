@@ -2,7 +2,6 @@
 /node_modules
 /bld
 /.idea
-
 # testing
 /coverage
 

@@ -9,12 +9,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const models_1 = require("../models/");
-const { Info, Resume } = models_1.default;
 class InfoHelper {
 }
-InfoHelper.findInfo = () => __awaiter(this, void 0, void 0, function* () { return yield Info.find({}); });
+InfoHelper.findInfo = () => __awaiter(this, void 0, void 0, function* () { return yield models_1.Info.find({}); });
 InfoHelper.findResume = () => __awaiter(this, void 0, void 0, function* () {
-    const response = yield Resume.find({});
+    const response = yield models_1.Resume.find({});
     return response;
 });
 exports.default = InfoHelper;

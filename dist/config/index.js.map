@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"F:/blog-ts-koa/src/","sources":["config/index.ts"],"names":[],"mappings":";;AAAa,QAAA,MAAM,GAAG,0BAA0B,CAAC"}
+{"version":3,"file":"index.js","sourceRoot":"C:/code/blog-ts-koa/src/","sources":["config/index.ts"],"names":[],"mappings":";;AAAa,QAAA,MAAM,GAAG,0BAA0B,CAAA;AACnC,QAAA,KAAK,GAAG,OAAO,CAAA;AACf,QAAA,KAAK,GAAG,OAAO,CAAA"}

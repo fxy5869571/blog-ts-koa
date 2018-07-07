@@ -27,7 +27,7 @@ class ArticleController {
             }
             else {
                 ctx.body = {
-                    articles: articles.map((item) => (Object.assign({}, item._doc, { content: item._doc.content.substr(0, 180) }))),
+                    articles,
                     total,
                 };
             }
@@ -46,7 +46,7 @@ class ArticleController {
                 ctx.body = { message: '发表文章成功' };
             }
             else {
-                ctx.body = { message: '发表文章失败' };
+                ctx.body = { message: '操作失败' };
             }
         });
     }
