@@ -22,14 +22,14 @@ export default class InfoHelper {
       return { message: '密码错误', type: 'error' }
     } else if (response.userName === 'admin') {
       const { userName, _id } = response
-      const token = jwt.sign({}, admin)
+      const token = jwt.sign({ _id }, admin)
       return {
         message: '欢迎回来，亲爱的超级管理员',
         user: { userName, _id, token },
       }
     } else {
       const { userName, _id } = response
-      const token = jwt.sign({}, guest)
+      const token = jwt.sign({ _id }, guest)
       return {
         message: '登陆成功,您现在是游客',
         user: { userName, _id, token },

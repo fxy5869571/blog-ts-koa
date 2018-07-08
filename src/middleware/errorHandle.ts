@@ -1,11 +1,11 @@
 import { Context } from 'koa'
 
-const errorHandle = (ctx: Context, next: any) => {
+const errorHandle = async (ctx: Context, next: any) => {
   return next().catch((err: any) => {
     if (err.status === 401) {
-      ctx.status = 200
+      ctx.status = 401
       ctx.body = {
-        message: '你没有登录或登录过期',
+        message: '游客只有浏览的权限',
         type: 'error',
       }
     } else {

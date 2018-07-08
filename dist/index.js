@@ -9,9 +9,13 @@ const mongoDB = require("./mongoDB");
 const router_1 = require("./router");
 const app = new koa();
 mongoDB.connect();
-app.use(jwt({ secret: config_1.admin }).unless({ path: [/\/get/, /\/login/, '/update-user'] }));
-app.use(koaBodyparser());
-app.use(errorHandle_1.default);
-app.use(router_1.default.routes()).use(router_1.default.allowedMethods());
+app
+    .use(errorHandle_1.default)
+    .use(jwt({ secret: config_1.admin }).unless({
+    path: [/\/get/, /\/login/, '/update-user'],
+}))
+    .use(koaBodyparser())
+    .use(router_1.default.routes())
+    .use(router_1.default.allowedMethods());
 app.listen(8001);
 //# sourceMappingURL=index.js.map

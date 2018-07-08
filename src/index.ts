@@ -9,10 +9,14 @@ import router from './router'
 const app = new koa()
 
 mongoDB.connect()
-app.use(
-  jwt({ secret: admin }).unless({ path: [/\/get/, /\/login/, '/update-user'] })
-)
-app.use(koaBodyparser())
-app.use(errorHandle)
-app.use(router.routes()).use(router.allowedMethods())
+app
+  .use(errorHandle)
+  .use(
+    jwt({ secret: admin }).unless({
+      path: [/\/get/, /\/login/, '/update-user'],
+    })
+  )
+  .use(koaBodyparser())
+  .use(router.routes())
+  .use(router.allowedMethods())
 app.listen(8001)
