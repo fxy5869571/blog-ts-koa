@@ -11,9 +11,9 @@ const {
   updateArticle,
 } = ArticleController
 router
-  .get('/info', findInfo)
-  .get('/resume', findResume)
-  .get('/article', article)
+  .get('/get-info', findInfo)
+  .get('/get-resume', findResume)
+  .get('/get-article', article)
   .get('/get-articles', articles)
   .post('/add-article', addArticle)
   .post('/delete-article', deleteArticle)

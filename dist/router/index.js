@@ -7,9 +7,9 @@ const { ArticleController, InfoController, UserController } = controller_1.defau
 const { findInfo, findResume } = InfoController;
 const { articles, article, addArticle, deleteArticle, updateArticle, } = ArticleController;
 router
-    .get('/info', findInfo)
-    .get('/resume', findResume)
-    .get('/article', article)
+    .get('/get-info', findInfo)
+    .get('/get-resume', findResume)
+    .get('/get-article', article)
     .get('/get-articles', articles)
     .post('/add-article', addArticle)
     .post('/delete-article', deleteArticle)
