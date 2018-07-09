@@ -4,33 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/src/DBHelper/index.ts" line="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dddd4e13-0dba-4002-807b-8200cffedcf8" name="Default" comment="添加后台权限管理">
-      <change afterPath="$PROJECT_DIR$/src/DBHelper/SayHelper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/SayController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Say.ts" afterDir="false" />
+    <list default="true" id="dddd4e13-0dba-4002-807b-8200cffedcf8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/DBHelper/ArticleHelper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/DBHelper/ArticleHelper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/DBHelper/InfoHelper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/DBHelper/InfoHelper.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/DBHelper/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/DBHelper/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/DBHelper/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/DBHelper/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/config/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/config/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/controller/ArticleController.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/ArticleController.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/controller/InfoController.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/InfoController.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/controller/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/controller/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controller/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/Article.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/Article.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/Info.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/Info.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/Resume.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/Resume.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/models/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/models/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mongoDB/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mongoDB/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/router/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/router/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBHelper/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DBHelper/SayHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBHelper/SayHelper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SayController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SayController.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -50,8 +27,8 @@
       <file leaf-file-name="ArticleController.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/ArticleController.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-285">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="27" />
+            <state relative-caret-position="264">
+              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="55" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -59,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SayController.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SayController.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/SayController.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+            <state relative-caret-position="312">
+              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -71,11 +48,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SayHelper.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArticleHelper.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DBHelper/ArticleHelper.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="25" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SayHelper.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DBHelper/SayHelper.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+            <state relative-caret-position="312">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -172,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,12 +210,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.1.0" />
-    <property name="last_opened_file_path" value="F:/blog-admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="F:\blog-ts-koa\node_modules\tslint" />
@@ -310,7 +308,8 @@
       <workItem from="1530855932784" duration="5337000" />
       <workItem from="1530941746917" duration="11589000" />
       <workItem from="1531017508535" duration="10816000" />
-      <workItem from="1531103119096" duration="5114000" />
+      <workItem from="1531103119096" duration="5209000" />
+      <workItem from="1531124720063" duration="2157000" />
     </task>
     <task id="LOCAL-00001" summary="添加发表文章和管理文章功能">
       <created>1530701683347</created>
@@ -340,38 +339,44 @@
       <option name="project" value="LOCAL" />
       <updated>1530976726226</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="说说管理，删除说说">
+      <created>1531116900330</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531116900330</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78966000" />
+    <option name="totallyTimeSpent" value="81218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="8" weight="0.3293348" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46341464" visible="true" weight="0.22444679" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46178862" visible="true" weight="0.22444679" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.3293348" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3293348" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.3293348" />
-      <window_info id="npm" order="2" sideWeight="0.5365854" side_tool="true" weight="0.22444679" />
+      <window_info id="npm" order="2" sideWeight="0.5382114" side_tool="true" visible="true" weight="0.22444679" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.3293348" />
-      <window_info id="Favorites" order="2" sideWeight="0.5169029" side_tool="true" weight="0.17650159" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991276" />
+      <window_info id="Favorites" order="2" sideWeight="0.5169029" side_tool="true" weight="0.17650159" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="RNConsole" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="RNConsole" order="7" />
       <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +389,8 @@
     <MESSAGE value="添加发表文章和管理文章功能" />
     <MESSAGE value="添加文章增删改查，嗯,改还没写，就这样" />
     <MESSAGE value="添加后台权限管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加后台权限管理" />
+    <MESSAGE value="说说管理，删除说说" />
+    <option name="LAST_COMMIT_MESSAGE" value="说说管理，删除说说" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -521,27 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBHelper/ArticleHelper.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="65" column="66" selection-start-line="65" selection-start-column="66" selection-end-line="65" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Say.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Say.tsx" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -567,9 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,30 +621,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ArticleController.ts">
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="27" />
+        <state relative-caret-position="360">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBHelper/SayHelper.ts">
+    <entry file="file://$PROJECT_DIR$/src/controller/ArticleController.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        <state relative-caret-position="264">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/SayController.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+        <state relative-caret-position="312">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBHelper/ArticleHelper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBHelper/SayHelper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>

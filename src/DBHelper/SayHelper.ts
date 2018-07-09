@@ -1,7 +1,19 @@
 import { Say } from '../models/'
+
+interface IPayload {
+  pageSize: string
+  pageIndex: string
+}
 export default class SayHelper {
-  public static findSay = async () => {
+  public static findSay = async (payload: IPayload) => {
+    const { pageIndex, pageSize } = payload
+    const Skip =
+      Number.parseInt(pageIndex) * Number.parseInt(pageSize) -
+      Number.parseInt(pageSize)
     const say = await Say.find({})
+      .sort({ create_at: -1 })
+      .limit(Number.parseInt(pageSize))
+      .skip(Skip)
     const total = await Say.count({})
     return { say, total }
   }

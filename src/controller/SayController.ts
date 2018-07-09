@@ -11,7 +11,7 @@ export default class UserController {
     ctx.body = response
   }
   public static async findSay(ctx: Context) {
-    const response = await SayHelper.findSay()
+    const response = await SayHelper.findSay(ctx.query)
     if (response) {
       ctx.body = response
     }
