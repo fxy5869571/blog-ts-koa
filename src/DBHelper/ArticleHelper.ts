@@ -38,8 +38,12 @@ export default class ArticleHelper {
     return { total, articles }
   }
   // 查询文章详情
-  public static findArticleById = async (id: string) =>
-    await Article.findById(id)
+  public static findArticleById = async (id: string) => {
+    const article: any = await Article.findById(id)
+    await Article.update({ _id: article._id }, { access: ++article.access })
+    return article
+  }
+
   // 添加文章
   public static createArticle = async (article: IArticle) => {
     // 随机标签颜色
