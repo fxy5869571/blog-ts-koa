@@ -19,9 +19,11 @@
     "mongoose": "^5.1.0",
     "koa-logger": "^3.2.0",
     "jsonwebtoken": "^8.3.0",
-    "koa-jwt": "^3.3.2"
+    "koa-jwt": "^3.3.2",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.112",
     "@types/jsonwebtoken":"^7.2.8",
     "@types/koa-jwt":"^3.3.0",
     "@types/koa-bodyparser": "^4.2.0",
