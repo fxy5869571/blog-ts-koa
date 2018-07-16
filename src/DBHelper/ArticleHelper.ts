@@ -3,6 +3,10 @@ import { Article } from '../models/'
 interface IQuery {
   pageIndex: string
   pageSize: string
+  tagTitle: string
+  title: string
+  type: string
+  nature: string
 }
 interface IArticle {
   _id?: string
@@ -20,11 +24,24 @@ const tagColors: string[] = [
 export default class ArticleHelper {
   // 分页查询文章
   public static findArticles = async (query: IQuery) => {
-    const { pageSize, pageIndex } = query
+    const { pageSize, pageIndex, tagTitle, title, type, nature } = query
+    let data: object
+    if (title) {
+      data = { title: new RegExp(title) }
+    }
+    if (tagTitle) {
+      data = { ...data, 'tag.title': tagTitle }
+    }
+    if (type) {
+      data = { ...data, type }
+    }
+    if (nature) {
+      data = { ...data, nature }
+    }
     const Skip =
       Number.parseInt(pageIndex) * Number.parseInt(pageSize) -
       Number.parseInt(pageSize)
-    const articles = await Article.find()
+    const articles = await Article.find(data)
       .sort({ create_at: -1 })
       .limit(Number.parseInt(pageSize))
       .skip(Skip)

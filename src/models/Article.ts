@@ -14,7 +14,7 @@ const ArticleSchema = new Schema({
   // 文章标签
   tag: Object,
   // 标题
-  title: String,
+  title: Schema.Types.Mixed,
   // 文章类型
   type: String,
 })

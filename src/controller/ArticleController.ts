@@ -10,7 +10,7 @@ const {
 export default class ArticleController {
   public static async articles(ctx: Context) {
     const { pageIndex, pageSize, timeFile } = ctx.query
-    const response = await findArticles({ pageSize, pageIndex })
+    const response = await findArticles(ctx.query)
     const { articles, total } = response
     if (timeFile) {
       ctx.body = {
