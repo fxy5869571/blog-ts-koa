@@ -1,5 +1,5 @@
 import * as _ from 'lodash'
-import { Article, Info, Resume } from '../models/'
+import { Article, Info } from '../models/'
 
 export default class InfoHelper {
   public static findInfo = async () => {
@@ -11,9 +11,5 @@ export default class InfoHelper {
       .filter((item, index) => index < 10)
       .map(item => ({ _id: item._id, title: item.title }))
     return { ...info[0]._doc, tag, lastArticle }
-  }
-  public static findResume = async () => {
-    const response = await Resume.find({})
-    return response
   }
 }
