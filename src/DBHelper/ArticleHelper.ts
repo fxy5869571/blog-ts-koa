@@ -1,4 +1,4 @@
-import { Article } from '../models/'
+import { Article, Info } from '../models/'
 
 interface IQuery {
   pageIndex: string
@@ -78,6 +78,15 @@ export default class ArticleHelper {
         }
       }
     )
+    const info: any = await Info.find({})
+    if (Array.isArray(info[0].data)) {
+      info[0].data.forEach((item: any) => {
+        if (Number.parseInt(item.month) === new Date().getMonth() + 1) {
+          item.article += 1
+        }
+      })
+      await Info.update({ _id: info[0]._id }, { data: info[0].data })
+    }
     return response
   }
   // 删除文章

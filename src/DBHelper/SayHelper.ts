@@ -1,4 +1,4 @@
-import { Say } from '../models/'
+import { Info, Say } from '../models/'
 
 interface IPayload {
   pageSize: string
@@ -27,6 +27,15 @@ export default class SayHelper {
   }
   public static addSay = async (say: object) => {
     const response = await Say.create({ ...say, create_at: Date.now() })
+    const info: any = await Info.find({})
+    if (Array.isArray(info[0].data)) {
+      info[0].data.forEach((item: any) => {
+        if (Number.parseInt(item.month) === new Date().getMonth() + 1) {
+          item.say += 1
+        }
+      })
+      await Info.update({ _id: info[0]._id }, { data: info[0].data })
+    }
     if (response) {
       return { message: '说说发表成功' }
     }

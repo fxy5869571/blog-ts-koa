@@ -1,5 +1,5 @@
 import * as _ from 'lodash'
-import { Article, Info } from '../models/'
+import { Article, Collect, Info, Say } from '../models/'
 
 export default class InfoHelper {
   public static findInfo = async () => {
@@ -12,5 +12,18 @@ export default class InfoHelper {
       .filter((item, index) => index < 10)
       .map(item => ({ _id: item._id, title: item.title }))
     return { ...info[0]._doc, tag, lastArticle, ArticleNum }
+  }
+  public static findAdminInfo = async () => {
+    const articleNumber = await Article.count({})
+    const sayNumber = await Say.count({})
+    const collectNumber = await Collect.count({})
+    const info: any = await Info.find({})
+    return {
+      access: info[0].access,
+      articleNumber,
+      collectNumber,
+      data: info[0].data,
+      sayNumber,
+    }
   }
 }

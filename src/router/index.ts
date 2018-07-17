@@ -17,6 +17,7 @@ const {
 router
   // 博客信息
   .get('/get-info', InfoController.findInfo)
+  .get('/get-admin-info', InfoController.findAdminInfo)
   // 文章
   .get('/get-article', article)
   .get('/get-articles', articles)

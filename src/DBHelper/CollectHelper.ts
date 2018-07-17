@@ -1,5 +1,4 @@
-import { Collect } from '../models/'
-
+import { Collect, Info } from '../models/'
 interface IPayload {
   pageSize: string
   pageIndex: string
@@ -27,6 +26,15 @@ export default class CollectHelper {
   }
   public static addCollect = async (say: object) => {
     const response = await Collect.create({ ...say, create_at: Date.now() })
+    const info: any = await Info.find({})
+    if (Array.isArray(info[0].data)) {
+      info[0].data.forEach((item: any) => {
+        if (Number.parseInt(item.month) === new Date().getMonth() + 1) {
+          item.collect += 1
+        }
+      })
+      await Info.update({ _id: info[0]._id }, { data: info[0].data })
+    }
     if (response) {
       return { message: '添加收藏成功' }
     }
