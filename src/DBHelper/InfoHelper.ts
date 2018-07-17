@@ -15,14 +15,23 @@ export default class InfoHelper {
   }
   public static findAdminInfo = async () => {
     const articleNumber = await Article.count({})
+    const articles = await Article.find({})
+    const lastArticle = articles[0]
     const sayNumber = await Say.count({})
+    const says = await Say.find({}).limit(1)
+    const lastSay = says[0]
     const collectNumber = await Collect.count({})
-    const info: any = await Info.find({})
+    const collects = await Collect.find({}).limit(1)
+    const lastCollect = collects[0]
+    const info: any = await Info.find({}).limit(1)
     return {
       access: info[0].access,
       articleNumber,
       collectNumber,
       data: info[0].data,
+      lastArticle,
+      lastCollect,
+      lastSay,
       sayNumber,
     }
   }
