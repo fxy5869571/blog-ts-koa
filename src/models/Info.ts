@@ -3,6 +3,7 @@ import { DB, Schema } from '../mongoDB'
 const InfoSchema = new Schema({
   // 访问次数
   access: { type: Number, default: 0 },
+  accessData: Array,
   // 作者头像
   authorImg: String,
   // 数据

@@ -16,23 +16,23 @@ const {
 } = ArticleController
 router
   // 博客信息
-  .get('/get-info', InfoController.findInfo)
-  .get('/get-admin-info', InfoController.findAdminInfo)
+  .get('/api/get-info', InfoController.findInfo)
+  .get('/api/get-admin-info', InfoController.findAdminInfo)
   // 文章
-  .get('/get-article', article)
-  .get('/get-articles', articles)
-  .post('/add-article', addArticle)
-  .post('/delete-article', deleteArticle)
-  .post('/update-article', updateArticle)
+  .get('/api/get-article', article)
+  .get('/api/get-articles', articles)
+  .post('/api/add-article', addArticle)
+  .post('/api/delete-article', deleteArticle)
+  .post('/api/update-article', updateArticle)
   // 用户信息
-  .post('/update-user', UserController.updateUser)
-  .post('/login', UserController.login)
+  .post('/api/update-user', UserController.updateUser)
+  .post('/api/login', UserController.login)
   // 说说
-  .get('/get-say', SayController.findSay)
-  .post('/add-say', SayController.addSay)
-  .post('/delete-say', SayController.deleteSay)
+  .get('/api/get-say', SayController.findSay)
+  .post('/api/add-say', SayController.addSay)
+  .post('/api/delete-say', SayController.deleteSay)
   // 收藏
-  .get('/get-collect', CollectController.findCollect)
-  .post('/add-collect', CollectController.addCollect)
-  .post('/delete-collect', CollectController.deleteCollect)
+  .get('/api/get-collect', CollectController.findCollect)
+  .post('/api/add-collect', CollectController.addCollect)
+  .post('/api/delete-collect', CollectController.deleteCollect)
 export default router

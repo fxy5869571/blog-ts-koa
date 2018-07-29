@@ -13,7 +13,7 @@ app
   .use(errorHandle)
   .use(
     jwt({ secret: admin }).unless({
-      path: [/\/get/, /\/login/, '/update-user'],
+      path: [/\/get/, '/api/login', '/api/update-user'],
     })
   )
   .use(koaBodyparser())
