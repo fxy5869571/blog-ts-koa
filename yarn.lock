@@ -1226,6 +1226,10 @@ koa-unless@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/koa-unless/-/koa-unless-1.0.0.tgz#5aa57384bc882568afc90ac04852a3d58658aeeb"
 
+koa2-cors@^2.0.6:
+  version "2.0.6"
+  resolved "http://registry.npm.taobao.org/koa2-cors/download/koa2-cors-2.0.6.tgz#9ad23df3a0b9bb84530b46f5944f3fb576086554"
+
 koa@^2.5.1:
   version "2.5.1"
   resolved "http://registry.npm.taobao.org/koa/download/koa-2.5.1.tgz#79f8b95f8d72d04fe9a58a8da5ebd6d341103f9c"
