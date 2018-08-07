@@ -11,6 +11,11 @@ mongoDB.connect()
 app
   .use(
     cors({
+      allowHeaders: ['Content-Type', 'Authorization', 'Accept'],
+      allowMethods: ['GET', 'POST', 'DELETE'],
+      credentials: true,
+      exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'],
+      maxAge: 5,
       origin: () => '*',
     })
   )
