@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"F:/blog-ts-koa/src/","sources":["controller/index.ts"],"names":[],"mappings":";;AAAA,2DAAmD;AAI1C,4BAJF,2BAAiB,CAIE;AAH1B,qDAA6C;AAGjB,yBAHrB,wBAAc,CAGqB;AAF1C,mDAA2C;AAEC,wBAFrC,uBAAa,CAEqC;AADzD,qDAA6C;AACc,yBADpD,wBAAc,CACoD"}
+{"version":3,"file":"index.js","sourceRoot":"src/","sources":["controller/index.ts"],"names":[],"mappings":";;AAAA,2DAAmD;AAMjD,4BANK,2BAAiB,CAML;AALnB,2DAAmD;AAMjD,4BANK,2BAAiB,CAML;AALnB,qDAA6C;AAM3C,yBANK,wBAAc,CAML;AALhB,mDAA2C;AAMzC,wBANK,uBAAa,CAML;AALf,qDAA6C;AAM3C,yBANK,wBAAc,CAML"}

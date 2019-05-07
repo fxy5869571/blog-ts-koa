@@ -9,20 +9,28 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const DBHelper_1 = require("../DBHelper");
-const { findInfo, findAdminInfo } = DBHelper_1.default.InfoHelper;
-class InfoController {
-    static findInfo(ctx) {
+const { CollectHelper } = DBHelper_1.default;
+class CollectController {
+    static addCollect(ctx) {
         return __awaiter(this, void 0, void 0, function* () {
-            const Info = yield findInfo();
-            ctx.body = Info;
+            const response = yield CollectHelper.addCollect(ctx.request.body);
+            ctx.body = response;
         });
     }
-    static findAdminInfo(ctx) {
+    static deleteCollect(ctx) {
         return __awaiter(this, void 0, void 0, function* () {
-            const AdminInfo = yield findAdminInfo();
-            ctx.body = AdminInfo;
+            const response = yield CollectHelper.deleteCollect(ctx.request.body);
+            ctx.body = response;
+        });
+    }
+    static findCollect(ctx) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const response = yield CollectHelper.findCollect(ctx.query);
+            if (response) {
+                ctx.body = response;
+            }
         });
     }
 }
-exports.default = InfoController;
-//# sourceMappingURL=InfoController.js.map
+exports.default = CollectController;
+//# sourceMappingURL=CollectController.js.map

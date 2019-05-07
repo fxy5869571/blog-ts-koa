@@ -9,20 +9,22 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const DBHelper_1 = require("../DBHelper");
-const { findInfo, findAdminInfo } = DBHelper_1.default.InfoHelper;
-class InfoController {
-    static findInfo(ctx) {
+const { UserHelper } = DBHelper_1.default;
+class UserController {
+    static updateUser(ctx) {
         return __awaiter(this, void 0, void 0, function* () {
-            const Info = yield findInfo();
-            ctx.body = Info;
+            const response = yield UserHelper.updateUser();
+            ctx.body = response;
         });
     }
-    static findAdminInfo(ctx) {
+    static login(ctx) {
         return __awaiter(this, void 0, void 0, function* () {
-            const AdminInfo = yield findAdminInfo();
-            ctx.body = AdminInfo;
+            const response = yield UserHelper.findUser(ctx.request.body);
+            if (response) {
+                ctx.body = response;
+            }
         });
     }
 }
-exports.default = InfoController;
-//# sourceMappingURL=InfoController.js.map
+exports.default = UserController;
+//# sourceMappingURL=UserController.js.map

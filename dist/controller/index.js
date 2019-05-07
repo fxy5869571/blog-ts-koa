@@ -2,6 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const ArticleController_1 = require("./ArticleController");
 exports.ArticleController = ArticleController_1.default;
+const CollectController_1 = require("./CollectController");
+exports.CollectController = CollectController_1.default;
 const InfoController_1 = require("./InfoController");
 exports.InfoController = InfoController_1.default;
 const SayController_1 = require("./SayController");

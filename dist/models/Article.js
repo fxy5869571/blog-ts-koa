@@ -15,7 +15,7 @@ const ArticleSchema = new mongoDB_1.Schema({
     // 文章标签
     tag: Object,
     // 标题
-    title: String,
+    title: mongoDB_1.Schema.Types.Mixed,
     // 文章类型
     type: String,
 });

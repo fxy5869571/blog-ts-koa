@@ -8,21 +8,19 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const DBHelper_1 = require("../DBHelper");
-const { findInfo, findAdminInfo } = DBHelper_1.default.InfoHelper;
-class InfoController {
-    static findInfo(ctx) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const Info = yield findInfo();
-            ctx.body = Info;
-        });
-    }
-    static findAdminInfo(ctx) {
-        return __awaiter(this, void 0, void 0, function* () {
-            const AdminInfo = yield findAdminInfo();
-            ctx.body = AdminInfo;
-        });
-    }
-}
-exports.default = InfoController;
-//# sourceMappingURL=InfoController.js.map
+const errorHandle = (ctx, next) => __awaiter(this, void 0, void 0, function* () {
+    return next().catch((err) => {
+        if (err.status === 401) {
+            ctx.status = 401;
+            ctx.body = {
+                message: '游客只有浏览的权限',
+                type: 'error',
+            };
+        }
+        else {
+            throw err;
+        }
+    });
+});
+exports.default = errorHandle;
+//# sourceMappingURL=errorHandle.js.map

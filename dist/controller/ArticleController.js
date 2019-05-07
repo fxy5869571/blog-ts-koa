@@ -14,7 +14,7 @@ class ArticleController {
     static articles(ctx) {
         return __awaiter(this, void 0, void 0, function* () {
             const { pageIndex, pageSize, timeFile } = ctx.query;
-            const response = yield findArticles({ pageSize, pageIndex });
+            const response = yield findArticles(ctx.query);
             const { articles, total } = response;
             if (timeFile) {
                 ctx.body = {
