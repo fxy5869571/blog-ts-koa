@@ -1,1 +1,5 @@
 declare module 'koa2-cors'
+declare module 'request'
+declare module 'koa-router'
+declare module 'cheerio'
+declare module 'iconv'

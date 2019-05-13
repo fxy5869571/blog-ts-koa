@@ -5,6 +5,7 @@ const controller_1 = require("../controller/");
 const router = new KoaRouter();
 const { articles, article, addArticle, deleteArticle, updateArticle, } = controller_1.ArticleController;
 router
+    .get('/api/reptile', controller_1.ReptileController.reptile)
     // 博客信息
     .get('/api/get-info', controller_1.InfoController.findInfo)
     .get('/api/get-admin-info', controller_1.InfoController.findAdminInfo)

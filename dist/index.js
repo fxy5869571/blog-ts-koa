@@ -21,7 +21,7 @@ app
 }))
     .use(errorHandle_1.default)
     .use(jwt({ secret: config_1.admin }).unless({
-    path: [/\/get/, '/api/login', '/api/update-user'],
+    path: [/\/get/, '/api/login', '/api/update-user', '/api/reptile'],
 }))
     .use(koaBodyparser())
     .use(router_1.default.routes())

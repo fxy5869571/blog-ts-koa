@@ -3,6 +3,7 @@ import {
   ArticleController,
   CollectController,
   InfoController,
+  ReptileController,
   SayController,
   UserController,
 } from '../controller/'
@@ -15,6 +16,7 @@ const {
   updateArticle,
 } = ArticleController
 router
+  .get('/api/reptile', ReptileController.reptile)
   // 博客信息
   .get('/api/get-info', InfoController.findInfo)
   .get('/api/get-admin-info', InfoController.findAdminInfo)
